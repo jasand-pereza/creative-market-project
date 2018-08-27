@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('signup');
 });
 
-Route::post('/user-exists', 'UsersController@userEmailExists');
+Route::post('/users/user-exists', 'UsersController@userEmailExists');

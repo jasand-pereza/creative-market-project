@@ -4,18 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Laravel</title>
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
   
     </head>
     <body>
+        <div id="app">
+            <h1>Sign up</h1>
+            <trial-form form-action="/users/user-exists"></trial-form>
+        </div>
 
-        <form action="/user-exists" method="POST">
-            @csrf
-            <input type="email" name="email" placeholder="email">
-        </form>
+        <script src="/js/app.js"></script>
     </body>
 </html>

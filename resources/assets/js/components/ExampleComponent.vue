@@ -1,16 +1,10 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card card-default">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
+        <form action="/user-exists" method="POST">
+            <slot></slot>
+            <label for="emailAddress">Sign up for a free trial</label>
+            <input id="emailAddress" type="email" v-model="email" name="email" placeholder="Enter you address here">
+        </form>
     </div>
 </template>
 
