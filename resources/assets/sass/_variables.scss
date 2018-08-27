@@ -3,12 +3,13 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-serif: 'Cardo', serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
+$blue: #1b1e51;
 $indigo: #6574cd;
 $purple: #9561e2;
 $pink: #f57077;
@@ -18,14 +19,23 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$text_gray: #525c67;
 
-$primary: $pink;
+$primary: #737c7f;
+$secondary: $pink;
 
 // forms
 $input-placeholder-color: #CCC;      
 
-$input-focus-border-color:              #CCC;
-$input-focus-box-shadow:                none;     
+$input-focus-border-color:#CCC;
+$input-focus-box-shadow: none;     
+
+
+// buttons
+
+$btn-padding-y-sm: 0.8rem;
+$btn-padding-x-sm: 0.8rem;
+$btn-line-height-sm: 0.8rem;
 
 // global
 $border-color: #CCC !default;

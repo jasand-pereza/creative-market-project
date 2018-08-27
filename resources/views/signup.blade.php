@@ -6,12 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" type="text/css" href="/css/app.css"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cardo:700|Roboto" rel="stylesheet">
 
         <title>Laravel</title>
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-  
     </head>
+    
     <body>
         <div class="container mb-5">
             <div class="row">
@@ -28,9 +27,12 @@
 
         <div id="app">
             <div class="container">
-                <div class="row">
-                    <h1>Sign up</h1>
-                    <trial-form form-action="/users/user-exists"></trial-form>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1>Get 3 Free downloads!</h1>
+                        <p>Start your <b>7-day trial</b> to access thousands of curated photos, fonts, graphics and more to deliver quality designs faster.</p>
+                        <trial-form form-action="/users/user-exists"></trial-form>
+                    </div>
                 </div>
             </div>
         </div>

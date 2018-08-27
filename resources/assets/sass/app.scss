@@ -9,6 +9,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 // project
+@import 'global/typography';
+@import 'elements/links';
 @import 'navs/nav-utility';
+@import 'navs/nav-main';
 @import 'elements/buttons';
 @import 'modules/module-site-search';

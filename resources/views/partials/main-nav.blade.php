@@ -1,4 +1,4 @@
- <div class="navbar navbar-expand-lg navbar-light bg-light nav-" id="navbarSupportedContent">
+ <div class="navbar navbar-expand-lg navbar-light bg-light nav-main" id="navbarSupportedContent">
     
     <a class="navbar-brand" href="/">
         <img src="/img/pro-mark.svg">
@@ -6,26 +6,30 @@
 
     @include ('partials.site-search')
     
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav">
     
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Graphics <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Graphics</a>
         </li>
         
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Fonts <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Fonts</a>
         </li>
         
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Templates <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Templates</a>
         </li>
         
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Dropdown <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Add-Ons</a>
         </li>
         
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Disabled <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Themes</a>
         </li>
     
     </ul>
