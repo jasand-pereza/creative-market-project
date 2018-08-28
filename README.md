@@ -2,7 +2,7 @@
 
 ### Project Summary.
 This document outlines the scope for this project. It will breakdown highlevel tasks by including a description for each item.
-An email sign up form will be developed to allow new customers of the Creative Market site to register and obtain trial access. User who have already registered will not be able to sign up again and instead be redirected to another view.
+An email sign up form will be developed to allow new customers of the Creative Market site to register and obtain trial access. Users who have already registered will not be able to sign up again and instead be redirected to another view.
 
 ### Project Requirements
  - PHP 7+
