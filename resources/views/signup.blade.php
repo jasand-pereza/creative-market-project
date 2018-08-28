@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="row justify-content-md-center mb-3">
                     <div class="col-md-8 col-lg-7 text-center">
-                        <h1 class="mb-3">Get 3 Free downloads!</h1>
+                        <h1 class="mb-3">Get 3 free downloads!</h1>
                         <p>Start your <b>7-day trial</b> to access thousands of curated photos, fonts, graphics and more to deliver quality designs faster.</p>
                     </div>
                 </div>

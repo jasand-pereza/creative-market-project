@@ -18,5 +18,9 @@
 
 	.btn.dropdown-toggle {
 		border: solid thin $light-gray;
+		
+		span.default {
+			font-size: 0.8rem
+		}
 	}
 }
