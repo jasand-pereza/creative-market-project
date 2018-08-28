@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Auth;
 use Illuminate\Http\Request;
 use App\User;
 
@@ -10,20 +9,19 @@ class UsersController extends Controller
 {
     /**
      * Create a new controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {
-    
     }
 
     /**
-     * Is the email valid
-     * @param  String  $email
-     * @return Boolean
+     * Is the email valid.
+     *
+     * @param string $email
+     *
+     * @return bool
      */
-    public static function isEmailValid($email) 
+    public static function isEmailValid($email)
     {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return false;
@@ -37,8 +35,10 @@ class UsersController extends Controller
     }
 
     /**
-     * Does an email exist in the users table
-     * @param  Request  $request
+     * Does an email exist in the users table.
+     *
+     * @param Request $request
+     *
      * @return json
      */
     public function userEmailExists(Request $request)
