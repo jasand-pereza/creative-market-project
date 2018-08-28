@@ -1,4 +1,4 @@
- <div class="navbar navbar-expand-lg navbar-light bg-light nav-main" id="navbarSupportedContent">
+ <div class="navbar navbar-expand-lg nav-main" nav-main" id="navbarSupportedContent">
     
     <a class="navbar-brand" href="/">
         <img src="/img/pro-mark.svg">
@@ -6,7 +6,7 @@
 
     @include ('partials.site-search')
     
-    <ul class="navbar-nav">
+    <ul class="navbar-nav w-100  justify-content-between">
     
         <li class="nav-item">
             <a class="nav-link" href="#">Graphics</a>

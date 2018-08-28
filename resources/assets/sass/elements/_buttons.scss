@@ -1,9 +1,33 @@
 .btn-primary, .btn-secondary {
 	color: #FFF;
 	border-radius: 6px;
+	text-transform: uppercase;
+}
+
+.btn-sm {
+	font-size: 0.7rem;
+	line-height: 0.8rem;
+	padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+}
+
+.btn-lg {
+	line-height: 0.8rem;
+	padding-bottom: 0.9rem;
+    padding-top: 1rem;
 }
 
 .btn-outline-secondary {
+	color: $primary;
 	border-color: #CCC;
 	background-color: #FFF;
+
+	&:active, &:hover, &:focus {
+		
+		&:not(.not-disabled) {
+			background-color: #CCC;
+			border-color: #CCC;
+		}
+	}
+	
 }

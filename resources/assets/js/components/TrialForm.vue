@@ -1,10 +1,13 @@
 <template>
     <div class="container">
         <form :action="formAction" method="POST">
+            <div class="form-group">
+                <label for="emailAddress" class="sr-only">Enter your address here</label>
+                <input id="emailAddress" type="email" class="form-control" v-model="email" name="email" placeholder="Enter your Emaill Address">
+            </div>
+            <button type="submit" class="btn btn-secondary btn-lg" @click.prevent="submitTrialForm">Start your free trial </button>
+            
             <slot></slot>
-            <label for="emailAddress">Sign up for a free trial</label>
-            <input id="emailAddress" type="email" v-model="email" name="email" placeholder="Enter you address here">
-            <button type="submit" @click.prevent="submitTrialForm">Submit</button>
         </form>
     </div>
 </template>

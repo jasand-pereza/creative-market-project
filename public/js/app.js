@@ -47351,6 +47351,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
@@ -47403,41 +47406,45 @@ var render = function() {
       "form",
       { attrs: { action: _vm.formAction, method: "POST" } },
       [
-        _vm._t("default"),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "emailAddress" } }, [
-          _vm._v("Sign up for a free trial")
-        ]),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.email,
-              expression: "email"
-            }
-          ],
-          attrs: {
-            id: "emailAddress",
-            type: "email",
-            name: "email",
-            placeholder: "Enter you address here"
-          },
-          domProps: { value: _vm.email },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "label",
+            { staticClass: "sr-only", attrs: { for: "emailAddress" } },
+            [_vm._v("Enter your address here")]
+          ),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.email,
+                expression: "email"
               }
-              _vm.email = $event.target.value
+            ],
+            staticClass: "form-control",
+            attrs: {
+              id: "emailAddress",
+              type: "email",
+              name: "email",
+              placeholder: "Enter your Emaill Address"
+            },
+            domProps: { value: _vm.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.email = $event.target.value
+              }
             }
-          }
-        }),
+          })
+        ]),
         _vm._v(" "),
         _c(
           "button",
           {
+            staticClass: "btn btn-secondary btn-lg",
             attrs: { type: "submit" },
             on: {
               click: function($event) {
@@ -47446,8 +47453,10 @@ var render = function() {
               }
             }
           },
-          [_vm._v("Submit")]
-        )
+          [_vm._v("Start your free trial ")]
+        ),
+        _vm._v(" "),
+        _vm._t("default")
       ],
       2
     )

@@ -1,28 +1,24 @@
 
 // Body
-$body-bg: #f8fafc;
+$body-bg: #FFF;
 
 // Typography
-$font-family-sans-serif: 'Roboto', sans-serif;
-$font-family-serif: 'Cardo', serif;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-serif: 'Buenard', serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
 $blue: #1b1e51;
-$indigo: #6574cd;
-$purple: #9561e2;
 $pink: #f57077;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
-$text_gray: #525c67;
+$text_gray: #403f3f;
 
 $primary: #737c7f;
 $secondary: $pink;
+
+// typography
+$font-size-lg: ($font-size-base * 1) !default;
+$font-size-sm: ($font-size-base * .675) !default;
 
 // forms
 $input-placeholder-color: #CCC;      
@@ -38,4 +34,5 @@ $btn-padding-x-sm: 0.8rem;
 $btn-line-height-sm: 0.8rem;
 
 // global
-$border-color: #CCC !default;
+$border-color: #CCC;
+$component-active-bg: #CCC;
