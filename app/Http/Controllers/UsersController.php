@@ -8,16 +8,9 @@ use App\User;
 class UsersController extends Controller
 {
     /**
-     * Create a new controller instance.
-     */
-    public function __construct()
-    {
-    }
-
-    /**
      * Is the email valid.
      *
-     * @param string $email
+     * @param  string  $email
      *
      * @return bool
      */
@@ -37,7 +30,7 @@ class UsersController extends Controller
     /**
      * Does an email exist in the users table.
      *
-     * @param Request $request
+     * @param  Request  $request
      *
      * @return json
      */

@@ -34,6 +34,8 @@ https://vimeo.com/287007273
 - Interactive animations
     
 ### Datbase Schema for users
+Just to note. Some of the columns come with the Laravel User model by default. A migration was later added
+to include the fields of "trial_expires" and "plan_ends_at". I added these columns because the real user database most likely has something like this. In this project, they are not actually be using for any functional purposess. 
 
 **USERS**
 - id | int, primary, unsigned, autoincrements, length = 10
