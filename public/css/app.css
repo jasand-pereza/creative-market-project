@@ -10581,10 +10581,8 @@ b {
   border-radius: 10px;
   min-height: 300px;
   margin: auto;
-}
-
-.module-trial-form:before {
-  content: '';
+  position: relative;
+  z-index: 200;
 }
 
 .module-trial-form ul {
@@ -10621,5 +10619,92 @@ b {
   text-align: center;
   margin: auto;
   color: #5a5858;
+}
+
+.trial-form-wrapper {
+  position: relative;
+}
+
+.trial-form-wrapper:before,
+.trial-form-wrapper:after {
+  content: none;
+}
+
+.trial-form-wrapper:before {
+  content: '';
+  background-image: url("/../img/free-trial-blob1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 230px;
+  position: absolute;
+  z-index: -1;
+}
+
+.trial-form-wrapper:after {
+  content: '';
+  background-image: url("/../img/free-trial-halftone-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 215px;
+  height: 215px;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 576px) {
+  .trial-form-wrapper:before {
+    content: '';
+    left: -13%;
+    bottom: -2.8rem;
+  }
+
+  .trial-form-wrapper:after {
+    content: '';
+    right: -17%;
+    top: 1.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .trial-form-wrapper:before {
+    content: '';
+    left: -12%;
+    bottom: -3.7rem;
+  }
+
+  .trial-form-wrapper:after {
+    content: '';
+    right: 0;
+    top: 1.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .trial-form-wrapper:before {
+    content: '';
+    left: 6%;
+    bottom: -2.8rem;
+  }
+
+  .trial-form-wrapper:after {
+    content: '';
+    right: 10%;
+    top: 1.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trial-form-wrapper:before {
+    content: '';
+    left: 10%;
+    bottom: -3.3rem;
+  }
+
+  .trial-form-wrapper:after {
+    content: '';
+    right: 20%;
+    top: 1.7rem;
+  }
 }
 

@@ -4,11 +4,8 @@
 	border-radius: 10px;
 	min-height: 300px;
 	margin: auto;
-
-	&:before {
-		content: '';
-		//background-image: url('../')
-	}
+	position: relative;
+	z-index: 200;
 
 	ul {
 		padding-left: 0;
@@ -45,4 +42,96 @@
 		margin: auto;
 		color: lighten($text_gray, 10%);
 	}
+}
+.trial-form-wrapper {
+	position: relative;
+	
+	&:before, &:after {
+		content: none;
+	}
+
+	&:before {
+		content: '';
+		background-image: url('/../img/free-trial-blob1.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 300px;
+		height: 230px;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&:after {
+		content: '';
+		background-image: url('/../img/free-trial-halftone-circle.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 215px;
+		height: 215px;
+		position: absolute;
+		z-index: -1;
+	}
+	
+	// I'm sure there is a better way to calculate the below without all of that code.
+	@include media-breakpoint-up(sm) { 
+		
+		&:before {
+			content: '';
+			left: -13%;
+			bottom: -2.8rem;
+		}
+
+		&:after {
+			content: '';
+			right: -17%;
+			top: 1.7rem;
+		}
+	}
+
+	@include media-breakpoint-up(md) { 
+		
+		&:before {
+			content: '';
+			left: -12%;
+			bottom: -3.7rem;
+		}
+
+		&:after {
+			content: '';
+			right: 0;
+			top: 1.7rem;
+		}
+	}
+
+	@include media-breakpoint-up(lg) { 
+		
+		&:before {
+			content: '';
+			left: 6%;
+			bottom: -2.8rem;
+		}
+
+		&:after {
+			content: '';
+			right: 10%;
+			top: 1.7rem;
+		}
+	}
+
+	@include media-breakpoint-up(xl) { 
+		
+		&:before {
+			content: '';
+			left: 10%;
+			bottom: -3.3rem;
+		}
+
+		&:after {
+			content: '';
+			right: 20%;
+			top: 1.7rem;
+		}
+	}
+	
+
 }

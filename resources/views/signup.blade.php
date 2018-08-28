@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-md-center">
+                <div class="row justify-content-md-center trial-form-wrapper">
                     <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4 module-trial-form px-3 py-4">
                             <div class="inner-content ml-3 ml-sm-3 ml-md-0">
                                 <p class="text-md-center text-sm-left">Get <b>3 free downloads</b> when you<br>start your free trial today.</p>
