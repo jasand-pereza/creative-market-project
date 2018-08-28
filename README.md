@@ -24,7 +24,7 @@ Mobile testing was done on an android mobile device. Due to the lack of tools av
 https://vimeo.com/287007273
 
 ### Tasks
-- Create the frontend view and form. This will include the following fields.
+- Create the frontend view and form.
 - Frontend validation 
 - Set up the backend.
     - Routing
