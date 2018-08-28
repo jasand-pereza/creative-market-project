@@ -1,10 +1,10 @@
 # Free Trial email verification tool – Scope/Project Info Document
 
-### Project Summary.
+### Project summary.
 This document outlines the scope for this project. It will breakdown highlevel tasks by including a description for each item.
 An email sign up form will be developed to allow new customers of the Creative Market site to register and obtain trial access. Users who have already registered will not be able to sign up again (through the longer form) and instead be redirected to another view.
 
-### Project Requirements
+### Project requirements
  - PHP 7+
  - MySQL 5.7.2
 
@@ -35,7 +35,7 @@ https://vimeo.com/287007273
     - Database setup (See below for schema)
 - Interactive animations
     
-### Datbase Schema for users
+### Datbase schema for users
 
 **USERS**
 - id | int, primary, unsigned, autoincrements, length = 10
@@ -46,6 +46,6 @@ https://vimeo.com/287007273
 - trial_expires | timestamp, nullable
 - plan_ends_at | timestamp, nullable
 
-### Notes About Form Validation
+### Notes about form validation
 The form checks for a valid domain and a valid email. It then checks the database to see if a record already exists.
 The database dump is seeded with 4 user records. Those records belong to employees of The Creative Market. I promise to remove this repository when the Creative Market team is done reviewing. 
