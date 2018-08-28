@@ -10,7 +10,7 @@ An email sign up form will be developed to allow new customers of the Creative M
 
 A full list of requirements can be found here https://laravel.com/docs/5.6/installation#server-requirements.
 
-## Testing
+### Testing
 This project was tested against the latest versions of Safari, Firefox, Chrome, and Edge.
 Mobile testing was done on an android mobile device. Due to the lack of tools available, I was not able to test with older versions of Internet Explorer or Apple devices.
 
