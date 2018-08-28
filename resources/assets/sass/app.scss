@@ -9,12 +9,11 @@
 @import '~bootstrap/scss/bootstrap';
 
 // project
-@import 'global/base';
 @import 'global/typography';
 @import 'elements/forms';
 @import 'elements/links';
+@import 'elements/buttons';
 @import 'navs/nav-utility';
 @import 'navs/nav-main';
-@import 'elements/buttons';
 @import 'modules/module-site-search';
 @import 'modules/module-trial-form';
