@@ -9,10 +9,10 @@ An email sign up form will be developed to allow new customers of the Creative M
  - MySQL 5.7.2
 
 ## Project setup
-- First run composer install.
-- Run `php artisan key:generate`
-- Create and migrated the database. You may run the php artisan migration command or import the latest SQL dump from the "/database/dumps" folder.
+- First run `composer install`.
 - Add your .env file in the project's root folder. Replace the site name and database information with the appropriate environment info.
+- Then run `php artisan key:generate`
+- Create and migrated the database. You may run the php artisan migration command or import the latest SQL dump from the "/database/dumps" folder.
 - Test away. In order to test the form, there needs to be existing users in the database.
 - Report bugs and then hire the developer because you made him feel bad.
 
