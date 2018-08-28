@@ -28,22 +28,23 @@
         <div id="app">
             <div class="container ">
                 <div class="row justify-content-md-center mb-3">
-                    <div class="col-md-8 col-lg-6 text-center">
+                    <div class="col-md-8 col-lg-7 text-center">
                         <h1 class="mb-3">Get 3 Free downloads!</h1>
                         <p>Start your <b>7-day trial</b> to access thousands of curated photos, fonts, graphics and more to deliver quality designs faster.</p>
                     </div>
                 </div>
 
                 <div class="row justify-content-md-center">
-                    <div class="col-md-5 col-lg-4 module-trial-form px-3 py-4">
-                        
-                            <p class="text-center">Get <b>3 free downloads</b> when you<br>start your free trial today.</p>
-                            <ul>
-                                <li>Get access to our full pro catalog</li>
-                                <li>Cancel anytime, risk free</li>
-                                <li>7 days free</li>
-                            </ul>
-                            
+                    <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4 module-trial-form px-3 py-4">
+                            <div class="inner-content ml-3 ml-sm-3 ml-md-0">
+                                <p class="text-md-center text-sm-left">Get <b>3 free downloads</b> when you<br>start your free trial today.</p>
+                                
+                                <ul class="mb-4 ml-lg-5 ml-md-5 ml-sm-none">
+                                    <li class="ml-md-4">Get access to our full pro catalog</li>
+                                    <li class="ml-md-4">Cancel anytime, risk free</li>
+                                    <li class="ml-md-4">7 days free</li>
+                                </ul>
+                            </div>
                             <trial-form form-action="/users/user-exists">
                                 {{--  form slot --}}
                                 <span class="form-footer-copy mt-3">The free trial is for new members only. All assets downloaded during the free trial period are covered bh a basic license.</span>
