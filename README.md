@@ -1,20 +1,23 @@
 # Free Trial email verification tool – Scope/Project Info Document
 
-## Project Summary.
+### Project Summary.
 This document outlines the scope for this project. It will breakdown highlevel tasks by including a description for each item.
 An email sign up form will be developed to allow new customers of the Creative Market site to register and obtain trial access. User who have already registered will not be able to sign up again and instead be redirected to another view.
 
-## Project Requirements
+### Project Requirements
  - PHP 7+
  - MySQL 5.7.2
 
-## Project setup
+### Project setup
 - First run `composer install`.
 - Add your .env file in the project's root folder. Replace the site name and database information with the appropriate environment info.
 - Then run `php artisan key:generate`
 - Create and migrated the database. You may run the php artisan migration command or import the latest SQL dump from the "/database/dumps" folder.
 - Test away. In order to test the form, there needs to be existing users in the database.
 - Report bugs and then hire the developer because you made him feel bad.
+
+### Video preview of the site
+https://vimeo.com/287007273
 
 ### Tasks
 - Create the frontend view and form. This will include the following fields.
