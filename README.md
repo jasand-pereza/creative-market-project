@@ -1,4 +1,4 @@
-# Free Trial email verification tool – Scope Document
+# Free Trial email verification tool – Scope/Project Info Document
 
 ## Project Summary.
 This document outlines the scope for this project. It will breakdown highlevel tasks by including a description for each item.
