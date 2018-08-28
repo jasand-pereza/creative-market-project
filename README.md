@@ -8,6 +8,10 @@ An email sign up form will be developed to allow new customers of the Creative M
  - PHP 7+
  - MySQL 5.7.2
 
+## Testing
+This project was tested against the latest versions of Safari, Firefox, Chrome and Edge.
+Mobile testing was done on an android mobile device. Due to the lack of tools available, I was not able to test with older versions of Internet Explorer or Apple devices.
+
 ### Project setup
 - First run `composer install`.
 - Add your .env file in the project's root folder. Replace the site name and database information with the appropriate environment info.
@@ -39,7 +43,6 @@ https://vimeo.com/287007273
 - updated_at | timestamp, nullable
 - trial_expires | timestamp, nullable
 - plan_ends_at | timestamp, nullable
-
 
 ### Notes About Form Validation
 The form checks for a valid domain and a valid email. It then checks the database to see if a record already exists.
