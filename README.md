@@ -36,3 +36,8 @@ An email sign up form will be developed to allow new customers of the Creative M
 - updated_at | timestamp, nullable
 - trial_expires | timestamp, nullable
 - plan_ends_at | timestamp, nullable
+
+
+### Notes About Form Validation
+The form checks for a valid domain and a valid email. It then checks the database to see if a record already exists.
+The database dump is seeded with 4 user records. Those records belong to employees of The Creative Market. I promise to remove this repository when the Creative Market team is done reviewing. 
