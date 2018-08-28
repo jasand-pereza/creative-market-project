@@ -12,22 +12,29 @@
 }
 
 .btn-lg {
+	font-size: 0.7rem;
 	line-height: 0.8rem;
 	padding-bottom: 0.9rem;
     padding-top: 1rem;
 }
 
+.btn-secondary {
+	
+	&:disabled {
+		color: #FFF;
+	}
+}
+
 .btn-outline-secondary {
 	color: $primary;
-	border-color: #CCC;
+	border-color: $light-gray;
 	background-color: #FFF;
 
 	&:active, &:hover, &:focus {
 		
 		&:not(.not-disabled) {
-			background-color: #CCC;
-			border-color: #CCC;
+			background-color: $light-gray;
+			border-color: $light-gray;
 		}
 	}
-	
 }

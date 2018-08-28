@@ -47354,6 +47354,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: {
@@ -47364,31 +47378,50 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            email: null
+            email: null,
+            successUserExists: false,
+            failedErrorState: false,
+            attempedEmails: []
         };
     },
 
+    computed: {
+        isEmailValid: function isEmailValid() {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(this.email);
+        }
+    },
     methods: {
         submitTrialForm: function submitTrialForm(e) {
             var _this = this;
 
+            if (this.attempedEmails.find(function (e) {
+                return e == _this.email;
+            })) {
+                this.failedErrorState = true;
+                return;
+            }
             axios.post(this.formAction, { email: this.email }).then(function (response) {
                 _this.formResponse(response.data);
             });
         },
         formResponse: function formResponse(responseData) {
             if (responseData.response_code == 2) {
-                alert('user exists');
+                this.successUserExists = true;
                 return;
             }
             if (responseData.response_code == 3) {
-                alert('user does not exists');
-                return;
+                window.location = 'https://pro.creativemarket.com/sign-up';
             }
             if (responseData.response_code == 4 || responseData.response_code == 1) {
-                alert('There was a problem with the email you specified. Please check to make sure you entered it correctly.');
+                this.attempedEmails.push(this.email);
+                this.fail();
                 return;
             }
+        },
+        fail: function fail() {
+            this.failedErrorState = true;
+            this.email = null;
         }
     }
 });
@@ -47401,66 +47434,111 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c(
-      "form",
-      { attrs: { action: _vm.formAction, method: "POST" } },
-      [
-        _c("div", { staticClass: "form-group" }, [
-          _c(
-            "label",
-            { staticClass: "sr-only", attrs: { for: "emailAddress" } },
-            [_vm._v("Enter your address here")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.email,
-                expression: "email"
-              }
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [
+      !_vm.successUserExists && !_vm.failedErrorState
+        ? _c(
+            "div",
+            [
+              _vm._t("before"),
+              _vm._v(" "),
+              _c(
+                "form",
+                { attrs: { action: _vm.formAction, method: "POST" } },
+                [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c(
+                      "label",
+                      {
+                        staticClass: "sr-only",
+                        attrs: { for: "emailAddress" }
+                      },
+                      [_vm._v("Enter your address here")]
+                    ),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.email,
+                          expression: "email"
+                        }
+                      ],
+                      class: _vm.isEmailValid
+                        ? "form-control valid-email"
+                        : "form-control",
+                      attrs: {
+                        id: "emailAddress",
+                        type: "email",
+                        name: "email",
+                        placeholder: "Enter your Emaill Address"
+                      },
+                      domProps: { value: _vm.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.email = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-secondary btn-lg",
+                      attrs: { disabled: !_vm.isEmailValid, type: "submit" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.submitTrialForm($event)
+                        }
+                      }
+                    },
+                    [_vm._v("Start your free trial")]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm._t("after")
             ],
-            staticClass: "form-control",
-            attrs: {
-              id: "emailAddress",
-              type: "email",
-              name: "email",
-              placeholder: "Enter your Emaill Address"
-            },
-            domProps: { value: _vm.email },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.email = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-secondary btn-lg",
-            attrs: { type: "submit" },
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                return _vm.submitTrialForm($event)
-              }
-            }
-          },
-          [_vm._v("Start your free trial ")]
-        ),
-        _vm._v(" "),
-        _vm._t("default")
-      ],
-      2
-    )
-  ])
+            2
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.successUserExists ? _vm._t("success-user-exists") : _vm._e(),
+      _vm._v(" "),
+      _vm.failedErrorState
+        ? _c(
+            "div",
+            [
+              _vm._t("failed-error-state"),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-secondary btn-lg",
+                  on: {
+                    click: function($event) {
+                      $event.preventDefault()
+                      _vm.failedErrorState = false
+                    }
+                  }
+                },
+                [_vm._v("Try it again.")]
+              )
+            ],
+            2
+          )
+        : _vm._e()
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

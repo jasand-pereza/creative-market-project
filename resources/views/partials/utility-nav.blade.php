@@ -3,7 +3,7 @@
         <a class="nav-link active" href="#">Pricing</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"><span class="pink">Sign in</span> or</a>
+        <a class="nav-link" href="#">Sign in<span class="tiny">or</span></a>
     </li>
     <li class="nav-item">
         <a class="nav-link btn-sm btn-secondary " href="#">Join Now</a>

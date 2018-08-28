@@ -2,10 +2,11 @@
 	background-color: #FFF;
 	box-shadow: 0px -1px 17px 0px #dcdcdc;
 	border-radius: 10px;
-	min-height: 300px;
+	min-height: 250px;
 	margin: auto;
 	position: relative;
 	z-index: 200;
+	overflow: hidden;
 
 	ul {
 		padding-left: 0;
@@ -15,6 +16,7 @@
 		list-style: none;
 		padding-left: 0;
 		font-size: 0.8rem;
+		text-indent: -400px;
 
 		&:before {
 			content: '';
@@ -28,10 +30,47 @@
 			position: relative;
 			top: 0.4rem;
 		}
+
+		&:nth-child(1) {
+			animation-name: fly-in-animation;
+			animation-duration: 1s;
+			animation-delay: 1s;
+			animation-fill-mode:forwards;
+		}
+
+		&:nth-child(2) {
+			animation-name: fly-in-animation;
+			animation-duration: 1s;
+			animation-delay: 1.3s;
+			animation-fill-mode:forwards;
+		}
+
+		&:nth-child(3) {
+			animation-name: fly-in-animation;
+			animation-duration: 1s;
+			animation-delay: 1.6s;
+			animation-fill-mode:forwards;
+		}
 	}
 
 	.btn {
 		width: 100%;
+	}
+
+	input[type="email"] {
+		height: 2.7rem;
+
+		&.valid-email {
+			background-image: url('/../img/thumbs-up-solid.svg');
+			background-position: 96% 7px;
+			background-repeat: no-repeat;
+			background-size: 7%;
+		}
+
+		&:focus {
+			border: solid $light_blue 0.1rem;
+		}
+
 	}
 
 	.form-footer-copy {
@@ -43,6 +82,7 @@
 		color: lighten($text_gray, 10%);
 	}
 }
+
 .trial-form-wrapper {
 	position: relative;
 	
@@ -132,6 +172,9 @@
 			top: 1.7rem;
 		}
 	}
-	
+}
 
+@keyframes fly-in-animation {
+    0%   { text-indent: -400px; }
+    100% { text-indent: 0; }
 }

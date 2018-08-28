@@ -1,0 +1,14 @@
+.form-control {
+	font-size: 0.8rem;
+}
+
+.dropdown-toggle:after {
+	border: none;
+	background-image: url('/../img/arrow-down.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 10px;
+    height: 10px;
+    position: relative;
+    top: 6px;
+}

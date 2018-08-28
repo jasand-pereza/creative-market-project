@@ -1,3 +1,23 @@
 .nav-utility {
 	float: right;
+	li a {
+		font-size: 0.7rem;
+	}
+	li .nav-link.btn-secondary {
+		font-size: 0.6rem;
+	}
+
+	li:nth-child(2) .nav-link {
+		padding-right: 0.6rem;
+	}
+
+	.btn {
+		font-size: 0.3rem;
+	}
+}
+
+.tiny {
+	color: $light-gray;
+	font-size: 0.6rem;
+	margin-left: 0.7rem;
 }
