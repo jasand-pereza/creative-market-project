@@ -1,6 +1,6 @@
 # Free Trial email verification tool – Scope/Project Info Document
 
-### Project summary.
+### Project summary
 This document outlines the scope for this project. It will break down high-level tasks by including a description for each item.
 An email sign up form will be developed to allow new customers of the Creative Market site to register and obtain trial access. Users who have already registered will not be able to sign up again (through the long form) and instead be redirected to another view.
 
