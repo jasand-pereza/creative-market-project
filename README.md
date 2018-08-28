@@ -29,7 +29,6 @@ An email sign up form will be developed to allow new customers of the Creative M
 
 **USERS**
 - id | int, primary, unsigned, autoincrements, length = 10
-- username | varchar, length = 255, nullable
 - email | varchar, length = 255
 - password | varchar, length = 255
 - created_at | timestamp, nullable
