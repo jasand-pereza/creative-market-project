@@ -8,6 +8,8 @@ An email sign up form will be developed to allow new customers of the Creative M
  - PHP 7+
  - MySQL 5.7.2
 
+A full list of requirements can be found here https://laravel.com/docs/5.6/installation#server-requirements.
+
 ## Testing
 This project was tested against the latest versions of Safari, Firefox, Chrome and Edge.
 Mobile testing was done on an android mobile device. Due to the lack of tools available, I was not able to test with older versions of Internet Explorer or Apple devices.
