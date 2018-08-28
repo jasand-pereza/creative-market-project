@@ -10,7 +10,7 @@ An email sign up form will be developed to allow new customers of the Creative M
 
 ## Project setup
 - First run composer install.
-- Create and migrated the database. You may run the php artisan migration command or import the latest SQL dump from the "/sql" folder.
+- Create and migrated the database. You may run the php artisan migration command or import the latest SQL dump from the "/database/dumps" folder.
 - Add your .env file in the project's root folder. Replace the site name and database information with the appropriate environment info.
 - Test away. In order to test the form, there needs to be existing users in the database.
 - Report bugs and then hire the developer because you made him feel bad.
